@@ -4,23 +4,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Projet de Loi - Abrogation Accord de Paris et Réforme Kyoto</title>
-    <!-- Intégration du DSFR (Système de Design de l'État) -->
+    
+    <!-- Intégration du DSFR (Système de Design de l'État) - Version Mobile First -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.10.2/dist/dsfr/dsfr.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.10.2/dist/utility/utility.min.css">
+    
     <style>
-        .article-box {
-            border-left: 4px solid #000091;
-            padding-left: 1rem;
-            margin-bottom: 1.5rem;
-            background-color: #f6f6f6;
-            padding: 1rem;
-        }
+        /* Ajustements mineurs pour peaufiner la hiérarchie visuelle */
         .titre-loi {
-            color: #000091;
-            margin-top: 2rem;
-            margin-bottom: 1.5rem;
-            border-bottom: 2px solid #000091;
+            color: var(--text-action-high-blue-france);
+            border-bottom: 2px solid var(--border-plain-blue-france);
             padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        /* Espacement optimisé pour la lecture sur mobile des articles */
+        .fr-highlight {
+            background-color: var(--background-alt-grey);
+            padding: 1rem 1rem 1rem 1.5rem;
+            margin-bottom: 2rem;
         }
     </style>
 </head>
@@ -49,17 +51,15 @@
         </div>
     </header>
 
-    <main role="main" id="contenu" class="fr-container fr-mt-4w fr-mb-8w">
+    <main role="main" id="contenu" class="fr-container fr-mt-4w fr-mt-md-8w fr-mb-8w">
         <div class="fr-grid-row">
-            <div class="fr-col-12">
+            <!-- Centrage automatique sur Desktop, 100% largeur sur Mobile -->
+            <div class="fr-col-12 fr-col-md-10 fr-col-offset-md-1 fr-col-lg-8 fr-col-offset-lg-2">
+                
                 <span class="fr-badge fr-badge--info fr-mb-2w">Projet de loi</span>
-                <h1 class="fr-h1">PROJET DE LOI</h1>
-                <p class="fr-text--lead">Portant abrogation de l'adhésion à l'Accord de Paris de 2015, refondation du Protocole de Kyoto et interdiction des pratiques de géo-ingénierie atmosphérique.</p>
-            </div>
-        </div>
-
-        <div class="fr-grid-row fr-mt-4w">
-            <div class="fr-col-12 fr-col-md-10 fr-col-lg-8">
+                <h1 class="fr-h1 fr-mb-3w">PROJET DE LOI</h1>
+                <p class="fr-text--lead fr-mb-6w">Portant abrogation de l'adhésion à l'Accord de Paris de 2015, refondation du Protocole de Kyoto et interdiction des pratiques de géo-ingénierie atmosphérique.</p>
+                
                 <!-- EXPOSÉ DES MOTIFS -->
                 <div class="fr-callout fr-mb-6w">
                     <h2 class="fr-callout__title">EXPOSÉ DES MOTIFS</h2>
@@ -73,23 +73,28 @@
                     </p>
                 </div>
 
+                <hr class="fr-hr fr-my-6w">
+
                 <!-- TEXTE DE LOI -->
-                <h2 class="fr-h2 fr-mt-6w fr-mb-2w">TEXTE DE LOI</h2>
+                <h2 class="fr-h2 fr-mb-2w">TEXTE DE LOI</h2>
 
                 <h3 class="fr-h4 titre-loi">TITRE I : DÉNONCIATION DE L'ACCORD DE PARIS ET RETOUR AU CADRE DE KYOTO</h3>
-                <div class="article-box">
-                    <h4 class="fr-h6 fr-mb-1w">Article 1</h4>
+                
+                <div class="fr-highlight">
+                    <h4 class="fr-h6 fr-mb-1v">Article 1</h4>
                     <p class="fr-text fr-mb-0">La République française dénonce formellement l'Accord de Paris sur le climat adopté le 12 décembre 2015, et engage les démarches diplomatiques nécessaires auprès de l'Organisation des Nations Unies pour s'en retirer.</p>
                 </div>
-                <div class="article-box">
-                    <h4 class="fr-h6 fr-mb-1w">Article 2</h4>
+                
+                <div class="fr-highlight">
+                    <h4 class="fr-h6 fr-mb-1v">Article 2</h4>
                     <p class="fr-text fr-mb-0">La politique climatique nationale est désormais régie par les principes d'un « Protocole de Kyoto Réformé ». Ce cadre impose un retour à des quotas d'émissions stricts, quantifiables et assortis de sanctions en cas de dépassement, pour les acteurs industriels et étatiques.</p>
                 </div>
 
                 <h3 class="fr-h4 titre-loi">TITRE II : RÉVISION DE LA LISTE DES GAZ ET SUBSTANCES SOUMIS À RESTRICTION</h3>
-                <div class="article-box">
-                    <h4 class="fr-h6 fr-mb-1w">Article 3</h4>
-                    <p class="fr-text fr-mb-1w">Sont réaffirmés comme Gaz à Effet de Serre (GES) faisant l'objet d'une limitation et d'une réduction obligatoires de leurs émissions, les six gaz historiques de l'Annexe A du Protocole de Kyoto de 1997, à savoir :</p>
+                
+                <div class="fr-highlight">
+                    <h4 class="fr-h6 fr-mb-1v">Article 3</h4>
+                    <p class="fr-text fr-mb-2v">Sont réaffirmés comme Gaz à Effet de Serre (GES) faisant l'objet d'une limitation et d'une réduction obligatoires de leurs émissions, les six gaz historiques de l'Annexe A du Protocole de Kyoto de 1997, à savoir :</p>
                     <ul class="fr-text fr-mb-0">
                         <li>Le dioxyde de carbone (CO2)</li>
                         <li>Le méthane (CH4)</li>
@@ -99,9 +104,10 @@
                         <li>L'hexafluorure de soufre (SF6)</li>
                     </ul>
                 </div>
-                <div class="article-box">
-                    <h4 class="fr-h6 fr-mb-1w">Article 4</h4>
-                    <p class="fr-text fr-mb-1w">Sont ajoutés au registre national des substances atmosphériques sous contrôle strict, en raison de leur utilisation dans les technologies de modification climatique et de leur impact sur les écosystèmes :</p>
+                
+                <div class="fr-highlight">
+                    <h4 class="fr-h6 fr-mb-1v">Article 4</h4>
+                    <p class="fr-text fr-mb-2v">Sont ajoutés au registre national des substances atmosphériques sous contrôle strict, en raison de leur utilisation dans les technologies de modification climatique et de leur impact sur les écosystèmes :</p>
                     <ul class="fr-text fr-mb-0">
                         <li>Les composés soufrés destinés à la formation d'aérosols artificiels.</li>
                         <li>Le calcite (carbonate de calcium) sous forme de nanoparticules ou microparticules atmosphériques.</li>
@@ -110,25 +116,30 @@
                 </div>
 
                 <h3 class="fr-h4 titre-loi">TITRE III : INTERDICTION DE LA GÉO-INGÉNIERIE AÉRIENNE</h3>
-                <div class="article-box">
-                    <h4 class="fr-h6 fr-mb-1w">Article 5</h4>
+                
+                <div class="fr-highlight">
+                    <h4 class="fr-h6 fr-mb-1v">Article 5</h4>
                     <p class="fr-text fr-mb-0">Est strictement interdit sur l'ensemble du territoire national, ainsi que dans l'espace aérien relevant de la souveraineté française, le déploiement de technologies de modification du rayonnement solaire (SRM - <em>Solar Radiation Management</em>) et de modification artificielle des précipitations.</p>
                 </div>
-                <div class="article-box">
-                    <h4 class="fr-h6 fr-mb-1w">Article 6</h4>
+                
+                <div class="fr-highlight">
+                    <h4 class="fr-h6 fr-mb-1v">Article 6</h4>
                     <p class="fr-text fr-mb-0">En application de l'Article 5, il est formellement interdit de procéder, faire procéder ou d'autoriser l'injection, l'épandage ou la dispersion par le biais d'aéronefs (avions, drones, ballons stratosphériques ou tout autre vecteur aérien) des substances listées à l'Article 4 (Soufre, Calcite, Iodure d'argent) à des fins d'expérimentation ou d'action climatique.</p>
                 </div>
 
                 <h3 class="fr-h4 titre-loi">TITRE IV : SANCTIONS ET CONTRÔLE</h3>
-                <div class="article-box">
-                    <h4 class="fr-h6 fr-mb-1w">Article 7</h4>
-                    <p class="fr-text fr-mb-0">Toute violation des dispositions de l'Article 6 par une personne physique ou morale (civile, militaire ou commerciale) est qualifiée d'atteinte grave à la sûreté environnementale et sanitaire de l'État.<br>
+                
+                <div class="fr-highlight">
+                    <h4 class="fr-h6 fr-mb-1v">Article 7</h4>
+                    <p class="fr-text fr-mb-0">Toute violation des dispositions de l'Article 6 par une personne physique ou morale (civile, militaire ou commerciale) est qualifiée d'atteinte grave à la sûreté environnementale et sanitaire de l'État.<br><br>
                     Cette infraction est punie de vingt ans de réclusion criminelle et d'une amende de 75 000 000 d'euros pour les personnes morales, assortie de la saisie immédiate des aéronefs et équipements ayant servi à l'infraction.</p>
                 </div>
-                <div class="article-box">
-                    <h4 class="fr-h6 fr-mb-1w">Article 8</h4>
+                
+                <div class="fr-highlight">
+                    <h4 class="fr-h6 fr-mb-1v">Article 8</h4>
                     <p class="fr-text fr-mb-0">Le Gouvernement est chargé de porter cette proposition de "Protocole de Kyoto Réformé" — incluant l'interdiction mondiale de la géo-ingénierie par épandage aérien — devant l'Assemblée Générale des Nations Unies dans un délai de six mois après la promulgation de la présente loi.</p>
                 </div>
+
             </div>
         </div>
     </main>
@@ -144,13 +155,16 @@
                     </a>
                 </div>
                 <div class="fr-footer__content">
-                    <p class="fr-footer__content-desc">Le code source de ce projet de loi est formaté en utilisant le Système de Design de l'État (DSFR) pour une intégration directe aux plateformes institutionnelles.</p>
+                    <p class="fr-footer__content-desc">Le code source de ce projet de loi est formaté en utilisant le Système de Design de l'État (DSFR) pour une intégration directe aux plateformes institutionnelles et optimisé pour une lecture sur mobile.</p>
                     <ul class="fr-footer__content-list">
                         <li class="fr-footer__content-item">
                             <a class="fr-footer__content-link" target="_blank" rel="noopener external" href="https://legifrance.gouv.fr">legifrance.gouv.fr</a>
                         </li>
                         <li class="fr-footer__content-item">
                             <a class="fr-footer__content-link" target="_blank" rel="noopener external" href="https://gouvernement.fr">gouvernement.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a class="fr-footer__content-link" target="_blank" rel="noopener external" href="https://github.com/ia-local/Protocol-Kyoto-reforme">Dépôt GitHub (Code Source)</a>
                         </li>
                     </ul>
                 </div>
